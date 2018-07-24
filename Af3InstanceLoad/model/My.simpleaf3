@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpleaf3:ComponentArchitecture xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simpleaf3="http://www.example.org/simpleaf3">
+  <components href="models/C1.simpleaf3#/"/>
+  <components name="C2">
+    <ports xsi:type="simpleaf3:OutputPort" name="oC2-1">
+      <connectedTo xsi:type="simpleaf3:InputPort" href="models/C1.simpleaf3#//@ports.0"/>
+    </ports>
+  </components>
+</simpleaf3:ComponentArchitecture>

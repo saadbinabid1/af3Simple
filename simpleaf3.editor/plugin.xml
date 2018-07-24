@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated simpleaf3 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="simpleaf3.presentation.Simpleaf3ModelWizardID"
+            name="%_UI_Simpleaf3ModelWizard_label"
+            class="simpleaf3.presentation.Simpleaf3ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Simpleaf3ModelFile.gif">
+         <description>%_UI_Simpleaf3ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated simpleaf3 -->
+      <editor
+            id="simpleaf3.presentation.Simpleaf3EditorID"
+            name="%_UI_Simpleaf3Editor_label"
+            icon="icons/full/obj16/Simpleaf3ModelFile.gif"
+            extensions="simpleaf3"
+            class="simpleaf3.presentation.Simpleaf3Editor"
+            contributorClass="simpleaf3.presentation.Simpleaf3ActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

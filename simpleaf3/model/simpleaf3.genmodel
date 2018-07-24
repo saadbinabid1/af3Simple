@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/simpleaf3/src-gen" creationIcons="false" editDirectory="/simpleaf3.edit/src-gen"
+    editorDirectory="/simpleaf3.editor/src-gen" modelPluginID="simpleaf3" modelName="Simpleaf3"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" containmentProxies="true" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>simpleaf3.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Simpleaf3" disposableProviderFactory="true" ecorePackage="simpleaf3.ecore#/">
+    <genClasses ecoreClass="simpleaf3.ecore#//ComponentArchitecture">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//ComponentArchitecture/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleaf3.ecore#//ComponentArchitecture/components"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleaf3.ecore#//ComponentArchitecture/requirements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="simpleaf3.ecore#//Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//Port/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleaf3.ecore#//Port/connectedTo"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleaf3.ecore#//Component">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//Component/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleaf3.ecore#//Component/ports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleaf3.ecore#//Component/behavior"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//Component/traceby"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleaf3.ecore#//InputPort"/>
+    <genClasses ecoreClass="simpleaf3.ecore#//OutputPort"/>
+    <genClasses ecoreClass="simpleaf3.ecore#//Automaton">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleaf3.ecore#//Automaton/states"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleaf3.ecore#//Automaton/transitions"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleaf3.ecore#//State">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//State/name"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleaf3.ecore#//Transition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//Transition/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleaf3.ecore#//Transition/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleaf3.ecore#//Transition/target"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleaf3.ecore#//Behavior">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//Behavior/name"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleaf3.ecore#//CodeSpecification"/>
+    <genClasses ecoreClass="simpleaf3.ecore#//Requirement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//Requirement/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//Requirement/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleaf3.ecore#//Requirement/id"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="simpleaf3" version="12.0.0.2017041100">
+  <ownedViewpoints name="Component Architecture" modelFileExtension="simpleaf3">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Component Architecture" domainClass="simpleaf3::ComponentArchitecture">
+      <metamodel href="../../simpleaf3/model/simpleaf3.ecore#/"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="Channel" deletionDescription="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Delete%20Channel']" sourceMapping="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']" targetMapping="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']" targetFinderExpression="feature:connectedTo" reconnections="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Reconnect%20Channel']">
+          <style sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="Component" labelDirectEdit="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Rename%20Component']" semanticCandidatesExpression="feature:components" doubleClickDescription="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Open%20Component']" domainClass="simpleaf3::Component">
+          <borderedNodeMappings name="Input" semanticCandidatesExpression="feature:eAllContents" domainClass="simpleaf3::InputPort">
+            <style xsi:type="style:DotDescription" borderSizeComputationExpression="1" showIcon="false" sizeComputationExpression="1" labelPosition="node" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="Output" semanticCandidatesExpression="feature:eAllContents" domainClass="simpleaf3::OutputPort">
+            <style xsi:type="style:DotDescription" borderSizeComputationExpression="1" showIcon="false" sizeComputationExpression="1" labelPosition="node" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </borderedNodeMappings>
+          <subNodeMappings name="Automaton" semanticCandidatesExpression="feature:eAllContents" domainClass="simpleaf3::Automaton"/>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" showIcon="false">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Requirement" labelDirectEdit="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Rename%20Component']" semanticCandidatesExpression="feature:requirements" domainClass="simpleaf3::Requirement">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" borderLineStyle="dot" showIcon="false" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Component" containerMappings="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@containerMappings[name='Component']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="simpleaf3::Component" referenceName="components">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Component '+container.components->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="Rename Component">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Open Component" mappings="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@containerMappings[name='Component']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Component']/@ownedRepresentations[name='Component']"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Input" nodeMappings="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Input']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="simpleaf3::InputPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'i'+container.name+'-'+container.ports->filter(simpleaf3::InputPort)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Output" nodeMappings="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@containerMappings[name='Component']/@borderedNodeMappings[name='Output']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="simpleaf3::OutputPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'o'+container.name+'-'+container.ports->filter(simpleaf3::OutputPort)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Automaton" nodeMappings="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@containerMappings[name='Component']/@subNodeMappings[name='Automaton']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="simpleaf3::Automaton" referenceName="behavior">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:container.name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Channel" edgeMappings="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@edgeMappings[name='Channel']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="connectedTo" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="connectedTo" valueExpression="var:source"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="Reconnect Channel">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="connectedTo" elementExpression="var:source"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="connectedTo" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                  <subModelOperations xsi:type="tool_1:Unset" featureName="connectedTo" elementExpression="var:element"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="connectedTo" valueExpression="var:element"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="Delete Channel">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[elementView.oclAsType(DEdge).sourceNode.oclAsType(DSemanticDecorator).target/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="connectedTo" elementExpression="[elementView.oclAsType(DEdge).targetNode.oclAsType(DSemanticDecorator).target/]"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[elementView.oclAsType(DEdge).targetNode.oclAsType(DSemanticDecorator).target/]">
+                  <subModelOperations xsi:type="tool_1:Unset" featureName="connectedTo" elementExpression="[elementView.oclAsType(DEdge).sourceNode.oclAsType(DSemanticDecorator).target/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Requirement" containerMappings="//@ownedViewpoints[name='Component%20Architecture']/@ownedRepresentations[name='Component%20Architecture']/@defaultLayer/@containerMappings[name='Requirement']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="simpleaf3::Requirement" referenceName="requirements">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Requirement '+container.requirements->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="simpleaf3.design.Services"/>
+  </ownedViewpoints>
+  <ownedViewpoints name="Component" modelFileExtension="simpleaf3">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Component" initialisation="true" domainClass="simpleaf3::Component">
+      <defaultLayer name="Default">
+        <nodeMappings name="State" labelDirectEdit="//@ownedViewpoints[name='Component']/@ownedRepresentations[name='Component']/@defaultLayer/@toolSections.0/@ownedTools[name='Rename%20State']" domainClass="simpleaf3::State">
+          <style xsi:type="style:EllipseNodeDescription" borderSizeComputationExpression="1" showIcon="false" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="Transition" sourceMapping="//@ownedViewpoints[name='Component']/@ownedRepresentations[name='Component']/@defaultLayer/@nodeMappings[name='State']" targetMapping="//@ownedViewpoints[name='Component']/@ownedRepresentations[name='Component']/@defaultLayer/@nodeMappings[name='State']" targetFinderExpression="[self.eGet('target')/]" sourceFinderExpression="[self.eGet('source')/]" domainClass="simpleaf3::Transition" useDomainElement="true" reconnections="//@ownedViewpoints[name='Component']/@ownedRepresentations[name='Component']/@defaultLayer/@toolSections.0/@ownedTools[name='Reconnect%20Transition%20Target'] //@ownedViewpoints[name='Component']/@ownedRepresentations[name='Component']/@defaultLayer/@toolSections.0/@ownedTools[name='Reconnect%20Transition%20Source']">
+          <style endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="State" nodeMappings="//@ownedViewpoints[name='Component']/@ownedRepresentations[name='Component']/@defaultLayer/@nodeMappings[name='State']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.eGet('behavior')/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="simpleaf3::State" referenceName="states">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'s'+container.behavior.states->filter(simpleaf3::State)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Transition" edgeMappings="//@ownedViewpoints[name='Component']/@ownedRepresentations[name='Component']/@defaultLayer/@edgeMappings[name='Transition']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="simpleaf3::Transition" referenceName="transitions">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:source.name+'-'+target.name"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="Rename State">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="Reconnect Transition Target">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:element.source.name+'-'+element.target.name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="Reconnect Transition Source" reconnectionKind="RECONNECT_SOURCE">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:target">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:element.source.name+'-'+element.target.name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+  <ownedViewpoints name="Requirement" modelFileExtension="simpleaf3">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Requirement" initialisation="true" domainClass="simpleaf3::Requirement">
+      <defaultLayer name="Default"/>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>

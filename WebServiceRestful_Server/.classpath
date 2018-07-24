@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/simpleaf3-0.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse_oxygen_jee/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar" sourcepath="C:/eclipse_oxygen_jee/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/ecore/xmi/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/ecore/xmi/impl/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/ecore/xmi/util/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/SaadBinAbid/.m2/repository/org/eclipse/emf/common/2.3.0-v200706262000/common-2.3.0-v200706262000.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="common-2.3.0-v200706262000.jar"/>
+			<attribute name="maven.groupId" value="org.eclipse.emf"/>
+			<attribute name="maven.artifactId" value="common"/>
+			<attribute name="maven.version" value="2.3.0-v200706262000"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/SaadBinAbid/.m2/repository/org/eclipse/emf/org.eclipse.emf.ecore/2.12.0/org.eclipse.emf.ecore-2.12.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="org.eclipse.emf.ecore-2.12.0.jar"/>
+			<attribute name="maven.groupId" value="org.eclipse.emf"/>
+			<attribute name="maven.artifactId" value="org.eclipse.emf.ecore"/>
+			<attribute name="maven.version" value="2.12.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
