@@ -47,8 +47,6 @@ import com.jama.oslc.model.Requirement;
 public class OSLC_POST_req_to_Jama {
 
 	public static void main(String[] args) {
-
-		
 		
 		try {
 

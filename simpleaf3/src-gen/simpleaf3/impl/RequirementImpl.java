@@ -3,13 +3,15 @@
 package simpleaf3.impl;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import com.jama.requirement.creation.CreateJamaRequirement;
+import com.jama.requirement.utils.JamaRequirmentUtil;
+
 import simpleaf3.Requirement;
+
 import simpleaf3.Simpleaf3Package;
 
 /**
@@ -95,6 +97,7 @@ public class RequirementImpl extends MinimalEObjectImpl.Container implements Req
 	 */
 	protected RequirementImpl() {
 		super();
+	
 	}
 
 	/**

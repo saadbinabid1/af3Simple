@@ -10,7 +10,10 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
+import com.jama.requirement.creation.CreateJamaRequirement;
+
 import simpleaf3.*;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -166,6 +169,15 @@ public class Simpleaf3FactoryImpl extends EFactoryImpl implements Simpleaf3Facto
 	 */
 	public Requirement createRequirement() {
 		RequirementImpl requirement = new RequirementImpl();
+		CreateJamaRequirement r= new CreateJamaRequirement();
+		try
+		{
+			r.create_jama_reqq();
+		
+		}catch (Exception e)
+		{
+			e.printStackTrace();
+		}
 		return requirement;
 	}
 
